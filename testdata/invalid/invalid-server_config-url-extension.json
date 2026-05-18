@@ -1,0 +1,24 @@
+{
+  "version": "0.1.12",
+  "schema_version": 3,
+  "minecraft": "1.21.1",
+  "loader": {
+    "type": "neoforge",
+    "version": "21.1.229",
+    "installer_url": "https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.229/neoforge-21.1.229-installer.jar",
+    "sha1": "7b6f8512bb5f6a2c5d83e3385016da9813d3589b"
+  },
+  "server_config": {
+    "url": "https://example.com/releases/example-server-config-0.1.12.txt",
+    "sha1": "09f9f4c284d25ac00a6f3f53bd8e5dc5a8c6f41f"
+  },
+  "mods": [
+    {
+      "name": "Almost Unified",
+      "url": "https://example.com/mods/almostunified-neoforge-1.21.1-1.4.1.jar",
+      "website_url": "https://example.com/mods/almostunified",
+      "sha1": "69913ae6d63f2e10603b272bb8a957c7d0f3f0e4",
+      "size": 295072
+    }
+  ]
+}

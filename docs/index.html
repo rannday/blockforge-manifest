@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Varda Manifest Schema</title>
+		<style>
+			body {
+				margin: 1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>Blockforge Manifest Schema</h1>
+			<p>Canonical JSON Schema. Used by my Varda modpack.</p>
+			<h3>
+				Manifest Schema
+				<a href="manifest.schema.json" target="_blank" rel="noopener noreferrer"
+					>JSON</a
+				>
+			</h3>
+			<pre id="manifest">Loading manifest...</pre>
+			<script>
+				async function loadManifest() {
+					const output = document.getElementById("manifest");
+					try {
+						const response = await fetch("manifest.schema.json");
+						if (!response.ok) {
+							throw new Error(`HTTP ${response.status}`);
+						}
+						const manifest = await response.json();
+						output.textContent = JSON.stringify(manifest, null, 2);
+					} catch (error) {
+						output.textContent = `Failed to load manifest.schema.json: ${error}`;
+					}
+				}
+				loadManifest();
+			</script>
+		</main>
+	</body>
+</html>
