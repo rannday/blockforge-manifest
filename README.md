@@ -18,6 +18,7 @@ This schema describes a full production manifest.
 Required production fields:
 
 - `minecraft`
+- `java`
 - `server_config`
 - `loader.type`
 - `loader.sha1`
@@ -30,6 +31,8 @@ All downloadable artifacts use HTTP(S) URLs.
 - `file:` URLs rejected on purpose
 
 `server_config` is required. `mods[]` entries are full production objects with `name`, `url`, `website_url`, `sha1`, and `size`.
+
+`java` is required. `java.major` is the required Java major version. Manifest producers must publish it explicitly. Manifest consumers should use `java.major` as source of truth for runtime checks instead of inferring Java version from Mojang metadata at install time.
 
 ## Workflow
 

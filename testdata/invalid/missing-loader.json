@@ -1,7 +1,10 @@
 {
   "version": "0.1.12",
-  "schema_version": 3,
+  "schema_version": 1,
   "minecraft": "1.21.1",
+  "java": {
+    "major": 21
+  },
   "server_config": {
     "url": "https://example.com/releases/example-server-config-0.1.12.zip",
     "sha1": "09f9f4c284d25ac00a6f3f53bd8e5dc5a8c6f41f"

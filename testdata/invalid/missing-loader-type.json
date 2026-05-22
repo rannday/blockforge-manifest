@@ -1,7 +1,10 @@
 {
   "version": "0.1.12",
-  "schema_version": 3,
+  "schema_version": 1,
   "minecraft": "1.21.1",
+  "java": {
+    "major": 21
+  },
   "loader": {
     "version": "21.1.229",
     "installer_url": "https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.229/neoforge-21.1.229-installer.jar",
